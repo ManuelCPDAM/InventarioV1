@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.InsertarFragment"
+    android:background="@drawable/backgroundinventario">
+
+
+    <TextView
+        android:id="@+id/MensajeExplicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Añadir nuevo objeto"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EtEtiqueta"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:hint="Etiqueta del objeto.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MensajeExplicacion" />
+
+    <EditText
+        android:id="@+id/EtDescripcion"
+        android:layout_width="280dp"
+        android:layout_height="78dp"
+
+        android:layout_marginTop="4dp"
+        android:hint="Breve descripción.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtArmario" />
+
+    <EditText
+        android:id="@+id/EtNombreObjeto"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:hint="Nombre del objeto.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtEtiqueta" />
+
+    <EditText
+        android:id="@+id/EtHabitacion"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:hint="Numero de habitacion.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtNombreObjeto" />
+
+    <EditText
+        android:id="@+id/EtArmario"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:hint="Numero de armario.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtHabitacion" />
+
+    <TextView
+        android:id="@+id/TvAdjuntarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="Imagen (opcional)"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/BtAnadir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtDescripcion"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <ImageView
+        android:id="@+id/IvAdjuntar"
+        android:layout_width="60dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="48dp"
+        android:src="@drawable/add_foto"
+        app:layout_constraintBottom_toTopOf="@+id/BtAnadir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvAdjuntarFoto"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ImageView
+        android:id="@+id/IvTomarFoto"
+        android:layout_width="60dp"
+        android:layout_height="46dp"
+        android:src="@drawable/tomar_foto"
+        app:layout_constraintBottom_toTopOf="@+id/BtAnadir"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toEndOf="@+id/IvAdjuntar"
+        app:layout_constraintTop_toBottomOf="@+id/TvAdjuntarFoto"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <Button
+        android:id="@+id/BtAnadir"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Añadir Objeto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImagenMostrar" />
+
+    <ImageButton
+        android:id="@+id/ImagenMostrar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:visibility="invisible"
+        android:adjustViewBounds="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/IvTomarFoto"
+        app:layout_constraintTop_toBottomOf="@+id/EtDescripcion"
+        tools:src="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

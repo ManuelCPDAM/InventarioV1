@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.MenuPrincipalActivity"
+    android:background="@drawable/backgroundinventario">
+
+    <ImageView
+        android:id="@+id/TvBienvenida"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/inventarioluis"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtConsultar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+
+        android:text="Ver Objetos"
+
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TvBienvenida" />
+
+    <Button
+        android:id="@+id/BtLogOut"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Salir y Cerrar Sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtModificar"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <Button
+        android:id="@+id/BtModificar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Modificar Objetos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtInsertar" />
+
+    <Button
+        android:id="@+id/BtInsertar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Insertar Objetos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtConsultar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

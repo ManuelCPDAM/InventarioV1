@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.RegistroActivity"
+    android:background="@drawable/backgroundinventario"
+    >
+
+    <ImageView
+        android:id="@+id/IvAddUsu"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/addusurecortada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BtRegistrarse"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtPass"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <EditText
+        android:id="@+id/EtPass"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Contraseña.."
+        android:inputType="textPassword"
+        android:textColorHint="@color/underLine"
+        android:textColor="@color/black"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtApellidos" />
+
+    <TextView
+        android:id="@+id/errorPass"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="*La contraseña no cumple con los requisitos mínimos de seguridad.*"
+        android:textColor="@color/red"
+        android:textSize="12dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtPass" />
+    <EditText
+        android:id="@+id/EtNombre"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Nombre.."
+        android:textColorHint="@color/underLine"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtEmailRegistro" />
+
+    <EditText
+        android:id="@+id/EtEmailRegistro"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:hint="Email del centro.."
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/underLine"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IvAddUsu" />
+
+    <EditText
+        android:id="@+id/EtApellidos"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="Apellidos.."
+        android:textColorHint="@color/underLine"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EtNombre" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

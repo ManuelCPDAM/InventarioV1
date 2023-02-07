@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+>
+    <item
+        android:id="@+id/nav_Inicio"
+        android:title="Inicio"
+        android:icon="@drawable/home_icon"
+        />
+    <item
+        android:id="@+id/nav_Consultar"
+        android:title="Ver Objetos"
+        android:icon="@drawable/buscar_icon"
+    />
+    <item
+        android:id="@+id/nav_Insertar"
+        android:title="Insertar Objetos"
+        android:icon="@drawable/insertar_icon"/>
+    <item
+        android:id="@+id/nav_Modificar"
+        android:title="Modificar Objetos"
+        android:icon="@drawable/modify_icon"/>
+    <item
+        android:title="Perfil">
+        <menu>
+            <item
+                android:id="@+id/nav_Ajustes"
+                android:title="Ajustes"
+                android:icon="@drawable/ajustes_icon"
+                />
+
+
+            <item
+                android:id="@+id/nav_CerrarSesion"
+                android:title="Cerrar Sesión"
+                android:icon="@drawable/logout_icon"/>
+        </menu>
+    </item>
+
+</menu>

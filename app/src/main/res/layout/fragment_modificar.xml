@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundinventario"
+    >
+
+    <Button
+        android:id="@+id/btModificar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="Modificar Objeto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
+        />
+
+    <EditText
+        android:id="@+id/etArmario"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:hint="Numero de armario.."
+        app:layout_constraintBottom_toTopOf="@+id/etDescripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Breve descripción.."
+        app:layout_constraintBottom_toTopOf="@+id/btModificar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/etNombreObjeto"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Nombre del objeto.."
+        app:layout_constraintBottom_toTopOf="@+id/etHabitacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/etHabitacion"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:hint="Numero de habitacion.."
+        app:layout_constraintBottom_toTopOf="@+id/etArmario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/BtComprobarObjeto"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="Buscar Objeto      🔍"
+        app:layout_constraintBottom_toTopOf="@+id/etNombreObjeto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEtiqueta"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <EditText
+        android:id="@+id/etEtiqueta"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:hint="Etiqueta del objeto.."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MensajeEditar"
+        />
+
+    <TextView
+        android:id="@+id/MensajeEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Modificación de objetos"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

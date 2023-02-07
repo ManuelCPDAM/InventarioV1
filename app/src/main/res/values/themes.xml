@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.InventarioV1_1012023" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primaryteal</item>
+        <item name="colorPrimaryVariant">@color/darkPrimaryTeal</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/lightPrimary</item>
+        <item name="colorSecondaryVariant">@color/secondaryText</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/darkPrimaryTeal</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="SplashTheme" parent="Theme.SplashScreen" >
+        <item name="windowSplashScreenBackground">@color/darkPrimaryTeal</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/inventarioluis</item>
+        <item name="postSplashScreenTheme">@style/Theme.InventarioV1_1012023</item>
+    </style>
+</resources>
